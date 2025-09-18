@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Chatbot</title>
+  <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+ <style>
+      df-messenger {
+        --df-messenger-button-titlebar-color: grey;
+        --df-messenger-chat-background-color: white;
+        --df-messenger-send-icon: #003366;
+        --df-messenger-user-message: grey;
+        --df-messenger-bot-message: white;
+        --df-messenger-titlebar-font-color: #ffffff;
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        z-index: 9999;
+      }
+    </style>
+<body>
+  <df-messenger
+  intent="WELCOME"
+  chat-title="VaibhavLaxmiBot"
+  agent-id="3e0ea1d5-585e-4299-a845-807991d36c3c"
+  language-code="en"
+   chat-icon="https://i.postimg.cc/z3YJ0ZfW/newbot-Icon.png">
+</df-messenger>
+</body>
+</html>
